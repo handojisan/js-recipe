@@ -4,15 +4,8 @@ module.exports = {
     es6: true,
   },
   extends: ["eslint:recommended"],
-  globals: {
-    Atomics: "readonly",
-    SharedArrayBuffer: "readonly",
-    Vue: "readonly",
-  },
+  plugins: ["eslint-plugin-html"],
   parserOptions: {
     ecmaVersion: 2018,
-  },
-  rules: {
-    indent: ["error", 2],
   },
 }
